@@ -4,8 +4,8 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const NavBar = () => {
   return (
     <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4">
-      <h1 className="w-full text-4xl font-bold italic text-green-600 uppercase">
-        store
+      <h1 className="w-full text-3xl font-bold italic text-green-600 uppercase">
+        minimal1st
       </h1>
       <ul className="flex">
         <li className="p-4">Store</li>
