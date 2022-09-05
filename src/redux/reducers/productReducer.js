@@ -4,8 +4,8 @@ const initialState = {
   products: [
     {
       id: 1,
-      title: "ban",
-      category: "developer",
+      title: "Ban",
+      category: "Developer",
     },
   ],
 };
