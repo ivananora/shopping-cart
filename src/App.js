@@ -9,7 +9,9 @@ const App = () => {
     <>
       <BrowserRouter>
         <NavBar />
-        <Main />
+        <div className="flex flex-col items-center">
+          <Main />
+        </div>
         <Footer />
       </BrowserRouter>
     </>
