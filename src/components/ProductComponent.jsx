@@ -11,8 +11,10 @@ const ProductComponent = () => {
   const renderList = products.map((product) => {
     const { id, image, title, price } = product;
     return (
-      <div className="flex flex-col cursor-pointer justify-between p-5 bg-white border-2 rounded drop-shadow-sm border-gray-100 hover:border-green-500 ease-out duration-300">
-        <img className="self-center mb-4 h-52" src={image} alt={title} />
+      <div className="flex flex-col min-w-[295px] min-h-[332px] cursor-pointer justify-between p-5 bg-white border-2 rounded drop-shadow-sm border-gray-100 hover:border-green-500 ease-out duration-300">
+        <div className="flex items-center justify-center max-h-[208px]">
+          <img className="mb-4 w-auto max-h-full" src={image} alt={title} />
+        </div>
         <h5 className="mb-2 h-7 truncate text-lg tracking-tight text-gray-800">
           {title}
         </h5>
