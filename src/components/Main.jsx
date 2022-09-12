@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import StoreComponent from "../pages/StoreComponent";
 import ProductPage from "../pages/ProductPage";
 import About from "../pages/About";
+import Cart from "../pages/Cart";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <Route path="/store" element={<StoreComponent />} />
       <Route path="/product/:productId" element={<ProductPage />} />
       <Route path="/about" element={<About />} />
+      <Route path="/cart" element={<Cart />} />
     </Routes>
   );
 };

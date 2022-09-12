@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../redux/actions/cartActions";
 import {
   selectedProduct,
   removeSelectedProduct,
@@ -53,6 +54,9 @@ const ProductPage = () => {
               ₱{roundUpNearestTen(Math.floor(price * 57))}
             </p>
             <p className="text-gray-500 text-base">{description}</p>
+            <button onClick={() => dispatch(addToCart(product))}>
+              Add to cart
+            </button>
           </div>
         </>
       )}
