@@ -23,7 +23,7 @@ const StoreComponent = () => {
   console.log("Products: ", products);
 
   return (
-    <div className="grid gap-5 grid-cols-4 px-4 w-1240px max-w-[1240px]">
+    <div className="grid gap-5 p-4 max-w-[1280px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       <ProductComponent />
     </div>
   );
