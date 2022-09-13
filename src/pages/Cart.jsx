@@ -28,11 +28,17 @@ const Cart = () => {
   });
 
   return (
-    <div>
-      <h1 className="text-3xl">Your Shopping Cart</h1>
-      <div>{cartItems}</div>
-      <p>Total: ₱{Math.ceil(totalPrice() / 10) * 10 * 57}</p>
-      <button>Proceed to checkout</button>
+    <div className="w-full xl:w-[1280px] p-4">
+      <h1 className="text-3xl">Shopping Cart</h1>
+      <div className="my-4 border-b">{cartItems}</div>
+      <div className="flex flex-col sm:flex-row items-center justify-end p-4">
+        <p className="text-2xl bold">
+          Total: ₱{Math.ceil(totalPrice() / 10) * 10 * 57}
+        </p>
+        <button className="p-3 bg-green-600 text-white rounded hover:bg-green-500 m-4">
+          Proceed to checkout
+        </button>
+      </div>
     </div>
   );
 };
