@@ -6,7 +6,7 @@ import CartProduct from "../components/CartProduct";
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
 
-  const sumAllProducts = () => {
+  const totalPrice = () => {
     return cart.reduce(
       (total, cartItem) => total + cartItem.price * cartItem.quantity,
       0
@@ -31,7 +31,7 @@ const Cart = () => {
     <div>
       <h1 className="text-3xl">Your Shopping Cart</h1>
       <div>{cartItems}</div>
-      <p>Total: ₱{Math.ceil(sumAllProducts() / 10) * 10 * 57}</p>
+      <p>Total: ₱{Math.ceil(totalPrice() / 10) * 10 * 57}</p>
       <button>Proceed to checkout</button>
     </div>
   );

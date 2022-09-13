@@ -6,6 +6,10 @@ import { useSelector } from "react-redux";
 const NavBar = () => {
   const cart = useSelector((state) => state.cart);
 
+  const sumProducts = () => {
+    return cart.reduce((total, cart) => total + cart.quantity, 0);
+  };
+
   return (
     <div className="flex flex-col items-center w-screen sticky top-0 z-50 bg-white border-b-2 border-gray-100 drop-shadow-sm">
       <div className="flex flex-col justify-between items-center sm:flex-row sm:w-full xl:w-[1280px] px-4">
@@ -24,6 +28,11 @@ const NavBar = () => {
           </Link>
           <Link to="/cart" className="py-4 pl-4 relative">
             <AiOutlineShoppingCart size="20" />
+            {cart.length > 0 ? (
+              <p className="flex absolute top-[25px] right-[10px] w-[18px] h-[18px] rounded-full bg-green-600 text-white justify-center items-center">
+                {sumProducts()}
+              </p>
+            ) : null}
           </Link>
         </div>
       </div>
