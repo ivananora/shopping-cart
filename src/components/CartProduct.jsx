@@ -13,11 +13,11 @@ const CartProductCard = ({ id, title, price, image, quantity }) => {
   };
 
   return (
-    <div className="grid grid-cols-3 md:grid-cols-[12rem_1fr_8rem_8rem] gap-4 items-center justify-between border-t p-5">
+    <div className="grid grid-cols-3 md:grid-cols-[12rem_1fr_8rem_8rem] gap-4 items-center justify-between border-t p-5 text-lg">
       <div className="hidden md:flex h-32 justify-center">
         <img src={image} alt={title} className="h-full"></img>
       </div>
-      <p>{title}</p>
+      <p className="truncate">{title}</p>
       <p className="text-center">
         ₱{Math.ceil(productProduct() / 10) * 10 * 57}
       </p>
