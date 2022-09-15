@@ -30,14 +30,27 @@ const Cart = () => {
   return (
     <div className="w-full xl:w-[1280px] p-4">
       <h1 className="text-3xl">Shopping Cart</h1>
-      <div className="my-4 border-b">{cartItems}</div>
+      {cart.length !== 0 ? (
+        <div className="my-4 border-b">{cartItems}</div>
+      ) : (
+        <p className="my-10 text-center">Your cart is empty. 😔</p>
+      )}
       <div className="flex flex-col sm:flex-row items-center justify-end p-4">
-        <p className="text-2xl bold">
-          Total: ₱{Math.ceil(totalPrice() / 10) * 10 * 57}
+        <p className="text-2xl mr-4">
+          Total:{" "}
+          <span className="font-bold text-green-700">
+            ₱{Math.ceil(totalPrice() / 10) * 10 * 57}
+          </span>
         </p>
-        <button className="py-3 px-6 bg-green-600 text-white rounded hover:bg-green-500 m-4">
-          Proceed to checkout
-        </button>
+        {cart.length !== 0 ? (
+          <button className="py-3 px-6 bg-green-700 text-white rounded hover:bg-green-600 m-4">
+            Proceed to checkout
+          </button>
+        ) : (
+          <button className="py-3 px-6 bg-green-700 opacity-50 text-white rounded m-4 cursor-not-allowed">
+            Proceed to checkout
+          </button>
+        )}
       </div>
     </div>
   );

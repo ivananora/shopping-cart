@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="grid grid-cols-1 text-center lg:text-left  w-full xl:w-[1280px] px-4 py-10 items-center lg:grid-cols-2">
-      <main className="mb-10">
+    <div className="grid grid-cols-1 text-center lg:text-left w-full xl:w-[1280px] px-4 py-10 items-center lg:grid-cols-2">
+      <main className="mb-10 w-full">
         <h1 className="text-6xl lg:text-7xl lg:mr-20 pb-5">
           Every purchase will be made with pleasure.
         </h1>
@@ -14,7 +14,7 @@ const Home = () => {
         </p>
         <Link
           to="/store"
-          className="rounded bg-green-600 text-white py-3 px-6 m-1 hover:bg-green-500"
+          className="rounded bg-green-700 text-white py-3 px-6 m-1 hover:bg-green-600"
         >
           Start Shopping
         </Link>

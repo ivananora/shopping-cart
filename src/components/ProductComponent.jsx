@@ -30,12 +30,12 @@ const ProductComponent = () => {
         <div className="mt-4">
           <h5 className="h-7 truncate text-lg tracking-tight">{title}</h5>
           <p className="text-gray-400 mb-1">{category}</p>
-          <p className="text-xl font-bold mb-1">
+          <p className="text-xl font-bold mb-1 text-green-700">
             ₱{roundUpNearestTen(Math.floor(price * 57))}
           </p>
           <div className="flex">
             <AiFillStar size="22" className="mr-1 text-yellow-400" />
-            <p className="text-gray-400">{rate}</p>
+            <p>{rate.toFixed(1)}</p>
           </div>
         </div>
       </Link>
