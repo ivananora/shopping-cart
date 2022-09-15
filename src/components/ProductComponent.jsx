@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { AiFillStar } from "react-icons/ai";
 
 const ProductComponent = () => {
   const products = useSelector((state) => state.allProducts.products);
@@ -10,7 +11,14 @@ const ProductComponent = () => {
   };
 
   const renderList = products.map((product) => {
-    const { id, image, title, price } = product;
+    const {
+      id,
+      image,
+      title,
+      price,
+      category,
+      rating: { rate },
+    } = product;
     return (
       <Link
         to={`/product/${id}`}
@@ -19,13 +27,16 @@ const ProductComponent = () => {
         <div className="flex items-center justify-center max-h-[208px]">
           <img className="w-auto max-h-full" src={image} alt={title} />
         </div>
-        <div className="">
-          <h5 className="mb-2 h-7 truncate text-lg tracking-tight text-gray-800">
-            {title}
-          </h5>
-          <p className="text-gray-700 text-xl font-bold">
+        <div className="mt-4">
+          <h5 className="h-7 truncate text-lg tracking-tight">{title}</h5>
+          <p className="text-gray-400 mb-1">{category}</p>
+          <p className="text-xl font-bold mb-1">
             ₱{roundUpNearestTen(Math.floor(price * 57))}
           </p>
+          <div className="flex">
+            <AiFillStar size="22" className="mr-1 text-yellow-400" />
+            <p className="text-gray-400">{rate}</p>
+          </div>
         </div>
       </Link>
     );

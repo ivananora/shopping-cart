@@ -16,7 +16,7 @@ const Home = () => {
           to="/store"
           className="rounded bg-green-600 text-white py-3 px-6 m-1 hover:bg-green-500"
         >
-          Get Started
+          Start Shopping
         </Link>
       </main>
       <aside>

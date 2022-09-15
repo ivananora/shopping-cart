@@ -35,7 +35,7 @@ const Cart = () => {
         <p className="text-2xl bold">
           Total: ₱{Math.ceil(totalPrice() / 10) * 10 * 57}
         </p>
-        <button className="p-3 bg-green-600 text-white rounded hover:bg-green-500 m-4">
+        <button className="py-3 px-6 bg-green-600 text-white rounded hover:bg-green-500 m-4">
           Proceed to checkout
         </button>
       </div>
