@@ -22,7 +22,7 @@ const Home = () => {
       <aside>
         <div>
           <img
-            src={require("../assets/djamal-akhmad-fahmi-2y5hL5L7btI-unsplash.jpg")}
+            src="https://images.unsplash.com/photo-1507707113652-f8a32c05046d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80"
             className="block w-full rounded-xl"
             alt="imagehero"
           />
