@@ -9,7 +9,7 @@ import Cart from "../pages/Cart";
 const Main = () => {
   return (
     <Routes>
-      <Route exact path="/" element={<Home />} />
+      <Route path="/shopping-cart" element={<Home />} />
       <Route path="/store" element={<StoreComponent />} />
       <Route path="/product/:productId" element={<ProductPage />} />
       <Route path="/about" element={<About />} />
