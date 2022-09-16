@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.817ef6f6.css",
-    "main.js": "/shopping-cart/static/js/main.0a3fdd03.js",
-    "static/media/djamal-akhmad-fahmi-2y5hL5L7btI-unsplash.jpg": "/shopping-cart/static/media/djamal-akhmad-fahmi-2y5hL5L7btI-unsplash.57275ea466a49225d498.jpg",
+    "main.js": "/shopping-cart/static/js/main.2201149b.js",
     "index.html": "/shopping-cart/index.html",
     "main.817ef6f6.css.map": "/shopping-cart/static/css/main.817ef6f6.css.map",
-    "main.0a3fdd03.js.map": "/shopping-cart/static/js/main.0a3fdd03.js.map"
+    "main.2201149b.js.map": "/shopping-cart/static/js/main.2201149b.js.map"
   },
   "entrypoints": [
     "static/css/main.817ef6f6.css",
-    "static/js/main.0a3fdd03.js"
+    "static/js/main.2201149b.js"
   ]
 }
